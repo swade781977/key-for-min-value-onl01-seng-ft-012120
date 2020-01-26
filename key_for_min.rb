@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   key_array = []
-  name_hash.each_key do |key| {key_array << key}
+  name_hash.each_key {|key| key_array << key}
   if key_array.empty?
     return nil
   else
